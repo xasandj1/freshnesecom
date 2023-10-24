@@ -1,0 +1,42 @@
+.menu {
+    background:  #F9F9F9;
+    padding:  16px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__bottom {
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        color: $primary;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    &__img{
+        margin-left: 4px;
+    }
+}

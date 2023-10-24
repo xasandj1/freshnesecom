@@ -1,0 +1,37 @@
+.blog {
+    margin-top: 67px;
+
+    &__container {}
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    &__card {
+        background-image: url(../img/blog.svg);
+        background-repeat: no-repeat;
+        max-width: 469px;
+        height: 400px;
+    }
+}

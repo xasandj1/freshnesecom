@@ -1,0 +1,72 @@
+@mixin btn($variant, $size, $startIcon: false, $endIcon: false) {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+
+  @if $size == large {
+    padding: 18px 48px;
+  } @else if $size == medium {
+    padding: 12px 16px;
+  } @else if $size == small {
+    padding: 12px;
+  }
+
+  // /////////
+  @if $variant == 1 {
+    border-radius: 12px;
+    border: 2px solid #92c064;
+    color: #151515;
+  }
+  @if ($variant == 1) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/endIcon.svg);
+    }
+  }
+  @if $variant == 1 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/startIcon.svg);
+    }
+  }
+  // variant 2
+  @if $variant == 2 {
+    border-radius: 12px;
+    border: 2px solid #92c064;
+    color: #151515;
+    background-color: #92c064;
+  }
+  @if ($variant == 1) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/endIcon.svg);
+    }
+  }
+  @if $variant == 1 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/endIcon.svg);
+    }
+  }
+}

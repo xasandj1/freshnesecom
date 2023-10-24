@@ -1,0 +1,170 @@
+.customer {
+    margin-bottom: 67px;
+    position: relative;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        color: $primary;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        gap: 32px;
+        overflow: hidden;
+        max-width: 1820px;
+    }
+
+    &__card {
+        padding: 24px 32px;
+        border-radius: 12px;
+        border: 1px solid #F1F1F1;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 370px;
+        height: 200px;
+        margin-left: 32px;
+
+        &::after {
+            content: "";
+            background-image: url(../img/women.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 87%;
+            left: 42%;
+        }
+    }
+
+    &__txt {
+        color: #151515;
+        text-align: center;
+        font-family: $fontPoppins;
+        font-size: 15px;
+        font-weight: 500;
+        max-width: 305px;
+        width: 100%;
+    }
+
+    &__span {
+        color: #A9A9A9;
+        text-align: center;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 87%;
+        left: 40%;
+    }
+
+    &__position {
+        position: relative;
+        left: -9%;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        width: 1700px;
+        padding: 30px 0;
+    }
+
+    &__card1 {
+        padding: 24px 32px;
+        border-radius: 12px;
+        border: 1px solid #F1F1F1;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 370px;
+        height: 200px;
+        left: 61%;
+
+        &::after {
+            content: "";
+            background-image: url(../img/women.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 87%;
+            left: 42%;
+        }
+    }
+
+    &__btns {
+        position: absolute;
+        left: 0;
+        z-index: 3;
+        top: 38%;
+        fill: $primary;
+        background-color: $primary;
+        border: none;
+        cursor: pointer;
+        padding: 16px 9px;
+        border-radius: 0px 12px 12px 0px;
+        box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.781)
+    }
+
+    &__btns1 {
+        position: absolute;
+        right: 10%;
+        z-index: 3;
+        top: 38%;
+        fill: $primary;
+        background-color: $primary;
+        border: none;
+        cursor: pointer;
+        padding: 16px 9px;
+        border-radius: 12px 0px 0px 12px;
+        box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.781)
+    }
+}
+
+.overflow {
+    position: relative;
+}
+
+.absolute1 {
+    position: absolute;
+    left: 58%;
+}
+
+.absolute2 {
+    position: absolute;
+    left: 28%;
+}

@@ -1,0 +1,89 @@
+.headline {
+    &__container {}
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        gap: 38px;
+
+    }
+
+    &__card {
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid #D1D1D1;
+        background: #FFF;
+    }
+
+    &__info {
+        &__title {
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 16px;
+        }
+
+        &__txt {
+            color: #575757;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+    }
+
+    &__span {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__button {
+        margin-top: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__btn {
+            color: #FFF;
+            font-family: $fontPoppins;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: 2px solid $darkGreen;
+            background: $green;
+            cursor: pointer;
+            padding: 4px 12px;
+        }
+    }
+}
