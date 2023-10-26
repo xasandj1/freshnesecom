@@ -1,8 +1,5 @@
 .home {
     margin: 15px 0;
-
-    &__container {}
-
     &__top {
         display: flex;
         align-items: center;
@@ -12,7 +9,7 @@
         color: #A9A9A9;
         font-size: 12px;
         font-weight: 400;
-        margin-right: 8px;
+        margin: 0 8px;
     }
 
     &__title1 {

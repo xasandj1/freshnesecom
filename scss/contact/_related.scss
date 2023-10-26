@@ -1,0 +1,32 @@
+.related {
+    margin-top: 64px;
+
+    &__container {}
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        &__img{
+            margin-left: 6px;
+        }
+    }
+}
