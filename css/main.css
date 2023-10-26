@@ -1819,7 +1819,6 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]::-moz-range-thumb {
-  -webkit-appearance: none;
   pointer-events: all;
   width: 24px;
   height: 24px;
