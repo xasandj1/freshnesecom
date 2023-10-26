@@ -1,7 +1,6 @@
 .blog {
     margin-top: 67px;
 
-    &__container {}
 
     &__top {
         display: flex;
@@ -28,10 +27,125 @@
         cursor: pointer;
     }
 
+    &__bottom {
+        margin-top: 36px;
+        display: flex;
+        gap: 31px;
+
+
+    }
+
+
     &__card {
         background-image: url(../img/blog.svg);
         background-repeat: no-repeat;
         max-width: 469px;
         height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            background: -webkit-gradient(linear, left bottom, left top, from(#000), to(rgba(0, 0, 0, 0)));
+            background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+            position: absolute;
+            width: 469px;
+            height: 204px;
+            left: 0%;
+            bottom: 0;
+            z-index: 0;
+            border-radius: 0px 0px 12px 12px;
+        }
+    }
+
+    &__trip {
+        color: $darkGreen;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-flex;
+        padding: 0px 8px;
+        background-color: #F4F8EC;
+        border-radius: 12px;
+    }
+
+    &__chef {
+        position: relative;
+
+        &__title {
+            color: #FFF;
+            font-family: $fontPoppins;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        &__title {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 8px;
+
+
+        }
+
+        &__span {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 16px;
+        }
+    }
+
+    &__vegetable {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        &__title {
+            color: $primary;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            max-width: 267px;
+            width: 100%;
+
+
+        }
+
+        &__title1 {
+            color: $primary;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+
+        &__span1 {
+            color: $primary;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 16px;
+        }
+    }
+
+    &__txt {
+        color: $darkGreen;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 12px;
+        background: #F4F8EC;
+        padding: 0 8px;
+        margin-top: 24px;
+        margin-bottom: 8px;
     }
 }
