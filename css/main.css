@@ -2391,4 +2391,124 @@ input[type=range] {
 }
 .related__top__img {
   margin-left: 6px;
+}
+
+.billing {
+  margin-top: 32px;
+}
+.billing__left {
+  max-width: 670px;
+  width: 100%;
+}
+.billing__title {
+  color: #151515;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+}
+.billing__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4px;
+}
+.billing__txt {
+  color: #A9A9A9;
+  font-size: 12px;
+  font-weight: 400;
+}
+.billing__payments {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  max-width: 670px;
+  width: 100%;
+}
+.billing__payments__left__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+}
+.billing__payments__left__inputs__input {
+  border-radius: 12px !important;
+  border: 1px solid #D1D1D1 !important;
+  background: #F9F9F9 !important;
+  padding: 12px 21px !important;
+  outline-color: #6A983C !important;
+  width: 320px !important;
+  height: 40px !important;
+  color: #151515 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+.billing__payments__left__inputs__input::-webkit-input-placeholder {
+  color: #A9A9A9 !important;
+}
+.billing__payments__left__inputs__input::-moz-placeholder {
+  color: #A9A9A9 !important;
+}
+.billing__payments__left__inputs__input:-ms-input-placeholder {
+  color: #A9A9A9 !important;
+}
+.billing__payments__left__inputs__input::-ms-input-placeholder {
+  color: #A9A9A9 !important;
+}
+.billing__payments__left__inputs__input::placeholder {
+  color: #A9A9A9 !important;
+}
+.billing__payments__left__inputs_title {
+  color: #151515;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 600;
+}
+.billing__different {
+  border-radius: 12px;
+  border: 1px solid #D1D1D1;
+  background: #F9F9F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 205px;
+  margin-top: 32px;
+  padding: 9px 16px;
+}
+.billing__different__title {
+  color: #151515;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.after {
+  position: relative;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 56%;
+  right: 6%;
 }/*# sourceMappingURL=main.css.map */

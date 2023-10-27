@@ -1,0 +1,102 @@
+.billing {
+    margin-top: 32px;
+
+    &__container {}
+
+    &__left {
+        max-width: 670px;
+        width: 100%;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4px;
+    }
+
+    &__txt {
+        color: #A9A9A9;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__payments {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        max-width: 670px;
+        width: 100%;
+
+        &__left {
+            &__inputs {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-top: 32px;
+
+                &__input {
+                    border-radius: 12px !important;
+                    border: 1px solid #D1D1D1 !important;
+                    background: #F9F9F9 !important;
+                    padding: 12px 21px !important;
+                    outline-color: $green !important;
+                    width: 320px !important;
+                    height: 40px !important;
+                    color: $primary !important;
+                    font-size: 14px !important;
+                    font-weight: 400 !important;
+
+                    &::placeholder {
+                        color: #A9A9A9 !important;
+                    }
+                }
+
+                &_title {
+                    color: $primary;
+                    font-family: $fontPoppins;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+            }
+
+        }
+    }
+
+    &__different {
+        border-radius: 12px;
+        border: 1px solid #D1D1D1;
+        background: #F9F9F9;
+        display: flex;
+        align-items: center;
+        width: 205px;
+        margin-top: 32px;
+        padding: 9px 16px;
+        &__title {
+            color: $primary;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.after {
+    position: relative;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 56%;
+    right: 6%;
+}
