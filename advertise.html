@@ -165,8 +165,239 @@
                         </form>
                         <h2 class="billing__different__title">Ship to a different address?</h2>
                     </div>
+                    <div class="billing__method">
+                        <div class="billing__method__top">
+                            <h2 class="billing__title">Billing info</h2>
+                            <div class="billing__info">
+                                <p class="billing__txt">Please enter your billing info</p>
+                                <p class="billing__txt">Step 2 of 5</p>
+                            </div>
+                        </div>
+                        <div class="billing__method__bottom">
+                            <div class="billing__method__bottom_payment">
+                                <div class="flex">
+                                    <input class="background" hidden="" id="radio12" name="product" type="radio">
+                                    <label class="green" for="radio12"></label>
+                                    <p class="billing__method__bottom_txt">FedEx</p>
+                                </div>
+                                <div class="billing__method__bottom_payment__price">
+                                    <span class="billing__method__bottom_payment__span">+32 USD</span>
+                                    <h3 class="billing__method__bottom_payment__title">Additional price</h3>
+                                </div>
+                                <img src="./img/fedex.svg" alt="">
+                            </div>
+                            <div class="billing__method__bottom_payment">
+                                <div class="flex">
+                                    <input class="background" hidden="" id="radio" name="product" type="radio">
+                                    <label class="green" for="radio"></label>
+                                    <p class="billing__method__bottom_txt">DHL</p>
+                                </div>
+                                <div class="billing__method__bottom_payment__price">
+                                    <span class="billing__method__bottom_payment__span">+15 USD</span>
+                                    <h3 class="billing__method__bottom_payment__title">Additional price</h3>
+                                </div>
+                                <img src="./img/dhl.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="billing__method__top">
+                                <h2 class="billing__title">Payment method</h2>
+                                <div class="billing__info">
+                                    <p class="billing__txt">Please enter your payment method</p>
+                                    <p class="billing__txt">Step 3 of 5</p>
+                                </div>
+                            </div>
+                            <div class="payment__bottom">
+                                <div class="payment__card">
+                                    <div class="flex">
+                                        <input class="background" hidden="" id="radio13" name="product12" type="radio">
+                                        <label class="green" for="radio13"></label>
+                                        <p class="billing__method__bottom_txt">Credit card</p>
+                                    </div>
+                                    <img src="./img/uzCard.svg" alt="">
+                                </div>
+                                <div class="payment__number">
+                                    <h1 id="20" class="payment__title">Card number</h1>
+                                    <input id="20" type="number" placeholder="Card number" class="payment__input ">
+                                </div>
+                                <div class="payment__cards">
+                                    <div class="payment__holder">
+                                        <h1 id="21" class="payment__title">Card holder</h1>
+                                        <input id="21" placeholder="Card number" class="payment__holder__input">
+                                    </div>
+                                    <div class="payment__holder">
+                                        <h1 id="22" class="payment__title">Expiration date</h1>
+                                        <input id="22" type="number" placeholder="Card number"
+                                            class="payment__cards__input">
+                                    </div>
+                                    <div class="payment__holder">
+                                        <h1 id="23" class="payment__title">CVC</h1>
+                                        <input id="23" type="number" placeholder="Card number"
+                                            class="payment__cards__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="billing__method__bottom_payment">
+                                <div class="flex">
+                                    <input class="background" hidden="" id="radio14" name="product" type="radio">
+                                    <label class="green" for="radio14"></label>
+                                    <p class="billing__method__bottom_txt">PayPal</p>
+                                </div>
+                                <img src="./img/paypal.svg" alt="">
+                            </div>
+                            <div class="billing__method__bottom_payment">
+                                <div class="flex">
+                                    <input class="background" hidden="" id="radio14" name="product" type="radio">
+                                    <label class="green" for="radio14"></label>
+                                    <p class="billing__method__bottom_txt">Bitcoin</p>
+                                </div>
+                                <img src="./img/btc.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="additional">
+                            <div class="billing__method__top">
+                                <h2 class="billing__title">Payment method</h2>
+                                <div class="billing__info">
+                                    <p class="billing__txt">Need something else? We will make it for you!</p>
+                                    <p class="billing__txt">Step 4 of 5</p>
+                                </div>
+                            </div>
+                            <div class="additional__order">
+                                <h1 class="additional__title">Order notes</h1>
+                                <input type="text" id="25"
+                                    placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."
+                                    class="additional__input">
+                            </div>
+                        </div>
+                        <div class="confirmation">
+                            <div class="billing__method__top">
+                                <h2 class="billing__title">Confirmation</h2>
+                                <div class="billing__info">
+                                    <p class="billing__txt">We are getting to the end. Just few clicks and your order si
+                                        ready!</p>
+                                    <p class="billing__txt">Step 5 of 5</p>
+                                </div>
+                                <div class="confirmation__flex">
+                                    <div class="confirmation__blog">
+                                        <form class="form">
+                                            <input class="checkbox" hidden="" id="product25" type="checkbox"
+                                                name="product">
+                                            <label class="custom_checkbox" for="product25"></label>
+                                        </form>
+                                        <p class="billing__method__bottom_txt cf__txt">I agree with sending an Marketing
+                                            and newsletter emails. No spam, promissed!</p>
+                                    </div>
+                                    <div class="confirmation__blog">
+                                        <form class="form">
+                                            <input class="checkbox" hidden="" id="product26" type="checkbox"
+                                                name="product">
+                                            <label class="custom_checkbox" for="product26"></label>
+                                        </form>
+                                        <p class="billing__method__bottom_txt cf__txt">I agree with our terms and
+                                            conditions and privacy policy.</p>
+                                    </div>
+                                    <button type="button" class="order__btn">Complete order</button>
+                                </div>
+                                <div class="safe">
+                                    <img src="./img/safe.svg" alt="">
+                                    <h1 class="safe__title">All your data are safe</h1>
+                                    <p class="safe__txt">We are using the most advanced security to provide you the best
+                                        experience ever.</p>
+                                </div>
+                                <p class="copyright">Copyright © 2020 Freshnesecom</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="billing__right"></div>
+                <div class="billing__right">
+                    <div class="billing__summary">
+                        <h2 class="billing__summary__title">Order Summary</h2>
+                        <p class="billing__summary__txt">Price can change depending on shipping method and taxes of your
+                            state.</p>
+                    </div>
+                    <div class="billing__card">
+                        <div class="billing__top">
+                            <img src="./img/smallCard.svg" alt="">
+                            <div class="billing__card__left">
+                                <h3 class="billing__card__title">Product title</h3>
+                                <p class="billing__card__txt"><span class="billing__card__span">Farm:</span> Tharamis
+                                    Farm
+                                </p>
+                                <div>
+                                    <p class="billing__card__txt"><span
+                                            class="billing__card__span right">Freshness:</span> 1 day
+                                        old
+                                    </p>
+                                    <img src="./img/goldStarsfull.svg" alt="" class="stars__img">
+                                </div>
+                                <div class="billing__card__usd">
+                                    <div class="billing__card__usd_left">
+                                        <span class="billing__card__usd_left__span">36.99 USD</span>
+                                        <span class="billing__card__usd_left__old">48.56 USD</span>
+                                    </div>
+                                    <div class="billing__card__usd_right">
+                                        <button class="carrots__prices_btn" fdprocessedid="02lhym"><span
+                                                class="span">1</span> | <span class="span__txt">Pcs</span> <img
+                                                src="./img/blackDown.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="billing__top">
+                            <img src="./img/smallCard.svg" alt="">
+                            <div class="billing__card__left">
+                                <h3 class="billing__card__title">Product title</h3>
+                                <p class="billing__card__txt"><span class="billing__card__span">Farm:</span> Tharamis
+                                    Farm
+                                </p>
+                                <div>
+                                    <p class="billing__card__txt"><span
+                                            class="billing__card__span right">Freshness:</span> 1 day
+                                        old
+                                    </p>
+                                    <img src="./img/goldStarsfull.svg" alt="" class="stars__img">
+                                </div>
+                                <div class="billing__card__usd">
+                                    <div class="billing__card__usd_left">
+                                        <span class="billing__card__usd_left__span">36.99 USD</span>
+                                        <span class="billing__card__usd_left__old">48.56 USD</span>
+                                    </div>
+                                    <div class="billing__card__usd_right">
+                                        <button class="carrots__prices_btn" fdprocessedid="02lhym"><span
+                                                class="span">1</span> | <span class="span__txt">Pcs</span> <img
+                                                src="./img/blackDown.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing__total">
+                        <div class="billing__total__payment">
+                            <h4 class="billing__total__payment_title">Subtotal</h4>
+                            <p class="billing__total__payment_title">73.98 USD</p>
+                        </div>
+                        <div class="billing__total__payment">
+                            <h4 class="billing__total__payment_title">Tax</h4>
+                            <p class="billing__total__payment_title">17% 16.53 USD</p>
+                        </div>
+                        <div class="billing__total__payment">
+                            <h4 class="billing__total__payment_title">Shipping</h4>
+                            <p class="billing__total__payment_title">0 USD</p>
+                        </div>
+                        <div class="billing__promo">
+                            <input type="text" placeholder="Apply promo code" class="billing__promo__input">
+                            <button class="billing__promo__btn">Apply now</button>
+                        </div>
+                        <div class="billing__order">
+                            <div class="billing__order__total">
+                                <h3 class="billing__order__total_txt">Total Order</h3>
+                                <p class="billing__order__total_txt">Guaranteed delivery day:  June 12, 2020</p>
+                            </div>
+                            <span class="billing__order__span">89.84 USD</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

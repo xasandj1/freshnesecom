@@ -1,8 +1,202 @@
 .billing {
     margin-top: 32px;
+
+    &__container {
+        display: flex;
+    }
+
     &__left {
         max-width: 670px;
         width: 100%;
+    }
+
+    &__right {
+        max-width: 468px;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #D1D1D1;
+        background: #FFF;
+        margin-left: 32px;
+        padding: 32px 16px;
+        height: 800px;
+    }
+
+    &__summary {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        &__txt {
+            color: #A9A9A9;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    &__card {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 16px;
+            max-width: 320px;
+            width: 100%;
+        }
+
+        &__usd {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 300px;
+            width: 100%;
+
+            &_left {
+                display: flex;
+                flex-direction: column;
+
+                &__span {
+                    color: $green;
+                    font-family: $fontPoppins;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                &__old {
+                    color: #A9A9A9;
+                    font-family: $fontPoppins;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-decoration-line: strikethrough;
+                }
+            }
+        }
+
+        &__title {
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        &__txt {
+            color: $primary;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &__span {
+            color: #A9A9A9;
+            margin-right: 41px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #F9F9F9;
+        padding-bottom: 16px;
+
+        &:nth-child(2) {
+            margin-top: 32px;
+        }
+    }
+
+    &__total {
+        margin-top: 40px;
+
+        &__payment {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 12px;
+
+            &_title {
+                color: $primary;
+                font-family: $fontPoppins;
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    &__promo {
+        margin-top: 32px;
+        position: relative;
+        max-width: 436px;
+
+        &__input {
+            height: 42px;
+            width: 100%;
+            outline-color: $green;
+            color: $primary;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 12px;
+            border: 1px solid #D1D1D1;
+            padding: 12px 21px;
+            background: #F9F9F9;
+
+            &::placeholder {
+                color: #A9A9A9;
+
+            }
+        }
+
+        &__btn {
+            color: $primary;
+            font-family: $fontPoppins;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            cursor: pointer;
+        }
+    }
+
+    &__order {
+        margin-top: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__total {
+            display: flex;
+            flex-direction: column;
+
+            &_txt {
+                color: $primary;
+                font-family: $fontPoppins;
+                font-size: 12px;
+                font-weight: 600;
+
+                &:nth-child(2) {
+                    font-family: unset;
+                    color: $green;
+                }
+            }
+        }
+
+        &__span {
+            color: $green;
+            font-family: $fontPoppins;
+            font-size: 26px;
+            font-weight: 600;
+        }
     }
 
     &__title {
@@ -78,10 +272,73 @@
         width: 205px;
         margin-top: 32px;
         padding: 9px 16px;
+
         &__title {
             color: $primary;
             font-size: 14px;
             font-weight: 400;
+        }
+    }
+
+    &__method {
+        margin-top: 64px;
+
+        &__top {
+            margin-top: 4px;
+        }
+
+        &__bottom {
+            margin-top: 32px;
+
+            &_payment {
+                border-radius: 12px;
+                border: 1px solid #D1D1D1;
+                background: #F9F9F9;
+                padding: 14px 17px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &:nth-child(2) {
+                    margin-top: 16px;
+                }
+
+                &:nth-child(3) {
+                    margin-top: 32px;
+                }
+
+                &:nth-child(4) {
+                    margin-top: 16px;
+                }
+
+                &__price {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &__span {
+                    color: $green;
+                    font-family: $fontPoppins;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                &__title {
+                    color: $primary;
+                    font-family: $fontPoppins;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-left: 12px;
+                }
+            }
+
+            &_txt {
+                color: $primary;
+                font-family: $fontPoppins;
+                font-size: 12px;
+                font-weight: 600;
+                margin-left: 16px;
+            }
         }
     }
 }
@@ -96,4 +353,12 @@
     position: absolute;
     top: 56%;
     right: 6%;
+}
+
+.stars__img {
+    margin-top: 11px;
+}
+
+.right {
+    margin-right: 20px;
 }

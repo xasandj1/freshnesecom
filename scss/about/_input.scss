@@ -1,0 +1,27 @@
+.green {
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 1px solid #D1D1D1;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.background:checked+.green {
+    background-color: $green;
+
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

@@ -1,0 +1,35 @@
+.additional {
+    margin-top: 64px;
+
+    &__order {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &__input {
+        color: $primary;
+        font-size: 14px;
+        font-weight: 400;
+        outline-color: $green;
+        border-radius: 12px;
+        border: 1px solid #D1D1D1;
+        background: #F9F9F9;
+        padding-top: 11px;
+        padding-bottom: 82px;
+        padding-left: 21px;
+        padding-right: 16px;
+        height: 112px;
+
+        &::placeholder {
+            color: #A9A9A9;
+        }
+    }
+}

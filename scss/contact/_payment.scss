@@ -1,0 +1,102 @@
+.payment {
+    margin-top: 64px;
+
+    &__bottom {
+        margin-top: 32px;
+        border-radius: 12px;
+        border: 1px solid #D1D1D1;
+        background: #FFF;
+        padding: 16px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__number {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    &__input {
+        border-radius: 12px !important;
+        border: 1px solid #D1D1D1 !important;
+        background: #F9F9F9 !important;
+        padding: 12px 21px !important;
+        outline-color: $green !important;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #A9A9A9;
+        }
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    &__holder {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(1){
+            max-width: 350px;
+            width: 100%;
+
+        }
+        &__input {
+            max-width: 350px;
+            width: 100%;
+            border-radius: 12px !important;
+            border: 1px solid #D1D1D1 !important;
+            background: #F9F9F9 !important;
+            padding: 12px 21px !important;
+            outline-color: $green !important;
+            color: $primary;
+            font-size: 14px;
+            font-weight: 400;
+
+            &::placeholder {
+                color: #A9A9A9;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-left: 32px;
+        }
+
+        &:nth-child(3) {
+            margin-left: 16px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+
+        &__input {
+            border-radius: 12px !important;
+            border: 1px solid #D1D1D1 !important;
+            background: #F9F9F9 !important;
+            padding: 12px 21px !important;
+            outline-color: $green !important;
+            color: $primary;
+            font-size: 14px;
+            font-weight: 400;
+            max-width: 120px;
+            width: 100%;
+
+            &::placeholder {
+                color: #A9A9A9;
+            }
+        }
+    }
+}
