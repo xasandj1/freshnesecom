@@ -3336,7 +3336,7 @@ input[type=range] {
   margin-top: 64px;
 }
 .bakery__container {
-  background: url(../../img/more.png) no-repeat center/cover;
+  background: url(../img/more.png) no-repeat center/cover;
   min-height: 480px;
   border-radius: 12px;
 }
