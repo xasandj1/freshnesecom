@@ -1,0 +1,9 @@
+.bakery {
+    margin-top: 64px;
+
+    &__container {
+        background: url(../../img/more.png) no-repeat center / cover;
+        min-height: 480px;
+        border-radius: 12px;
+    }
+}

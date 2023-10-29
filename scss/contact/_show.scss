@@ -26,6 +26,9 @@
         font-size: 12px;
         font-weight: 400;
         cursor: pointer;
+        &:nth-child(2){
+            color: $green;
+        }
     }
 
     &__product {

@@ -1,0 +1,74 @@
+.meal {
+    margin-top: 56px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__absolute {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        margin: 24px;
+        height: 350px;
+
+
+        &__txt {
+            color: $green;
+            font-family: $fontPoppins;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 12px;
+            background: #F4F8EC;
+            padding: 2px 8px;
+        }
+    }
+
+    &__space {
+        &__title {
+            color: #FFF;
+            font-family: $fontPoppins;
+            font-size: 22px;
+            font-weight: 600;
+            max-width: 380px;
+            width: 100%;
+        }
+    }
+
+    &__author {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+
+        &__title {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        &__txt {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            margin-left: 16px;
+        }
+    }
+}

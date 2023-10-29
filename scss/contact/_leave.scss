@@ -1,0 +1,33 @@
+.leave {
+    margin-top: 96px;
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    &__txt {
+        color: $primary;
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    &__decaration {
+        text-decoration: underline;
+    }
+}
+
+.mt {
+    margin-top: 16px;
+}
+
+.mt {
+    margin-top: 16px;
+
+}
+.look{
+    margin-top: 96px;
+}

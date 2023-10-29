@@ -21,7 +21,6 @@
     &__block {
         display: flex;
         justify-content: space-between;
-
     }
 
     &__links {
@@ -31,6 +30,10 @@
 
     &__title {
         margin-bottom: 8px;
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     &__item {
@@ -71,7 +74,8 @@
         left: 10%;
         top: 10%;
     }
-    &__cards{
+
+    &__cards {
         display: flex;
         align-items: center;
         gap: 32px;
@@ -104,6 +108,7 @@
         color: #575757;
         font-size: 12px;
         font-weight: 400;
+        
     }
 
     &__span {
@@ -120,9 +125,9 @@
         font-weight: 700;
         border-radius: 12px;
         border: 2px solid $darkGreen;
-        background:  $green;
+        background: $green;
         cursor: pointer;
         padding: 4px 12px;
     }
-    
+
 }

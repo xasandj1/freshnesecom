@@ -1,0 +1,53 @@
+.tags {
+    margin-top: 96px;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__title {
+        color: $primary;
+        font-family: $fontPoppins;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    &__food {
+        color: $green;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 12px;
+        background: #F4F8EC;
+        padding: 2px 8px;
+    }
+
+    &__txt {
+        color: $green;
+        font-family: $fontPoppins;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 12px;
+        background: #F4F8EC;
+        padding: 2px 8px;
+        margin-left: 8px;
+    }
+
+    &__cup {
+        color: $primary;
+        font-size: 17px;
+        font-weight: 400;
+        max-width: 550px;
+        width: 100%;
+        &:nth-child(5){
+            margin-top: 31px;
+        }
+    }
+}
